@@ -1,0 +1,47 @@
+<div class="background">
+  <div class="posicao-button">
+    <button class="mudar-linguagem" type="button" (click)="mudarTraducao()">
+      <span *ngIf="!traduzir">Translate for English</span>
+      <span *ngIf="traduzir">Traduzir para Português</span>
+    </button>
+  </div>
+  <div *ngIf="!traduzir" class="portugues font">
+    <h1 style="font-size: 3em">Spotify Busca e Favorito</h1>
+    <br>
+    <p class="recuo">
+      Esse WebSite foi criado com a finalidade de otimizar a 
+      busca de artistas, albuns e músicas, facilitando e 
+      divertindo a busca com estilo e bem intuitivo.
+    </p>
+<fa [name]="'thumbs-up'"></fa>
+<i fa [name]="'check'" [size]=1 style="color: red"></i>
+    <p>
+
+    </p>
+
+    <br>
+
+    <p>
+      Divirtam-se!!!
+    </p>
+  </div>  
+  <div *ngIf="traduzir" class="ingles font">
+    <h1 style="font-size: 3em">Spotify Search and Favorite</h1>
+    <br>
+    <p class="recuo">
+      This WebSite was created with the purpose of optimizing
+      the search of artists, albums and songs, facilitating and 
+      entertaining the search with style and good intuition.
+    </p>
+    
+    <p>
+    
+    </p>
+    
+    <br>
+    
+    <p>
+      Have fun!!!
+    </p>
+  </div>
+</div>

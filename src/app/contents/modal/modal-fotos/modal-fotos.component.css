@@ -1,0 +1,54 @@
+.background{
+  width: 100%;
+}
+
+.modal{
+    height: 683px;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: 5%;
+    margin-top: 20px;
+    box-shadow: 0 0 1em black;
+    position: absolute;
+    z-index: 999;
+}
+
+.imagemModal{
+    height: 640px;
+    width: 640px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.header{
+  background: #222326;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+  padding: 10px;
+  color: #1db954
+}
+
+.header:hover{
+  color: red;
+}
+
+.close{
+  cursor: pointer;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 700px) {
+    .modal{
+      width: 90%;
+      margin-left: 5%;
+      height: 80%;
+    }
+
+    .imagemModal{
+      width: 100%;
+      height: 300px;
+    }
+
+    .header{
+      width: 95%;
+    }
+}

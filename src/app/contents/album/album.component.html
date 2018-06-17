@@ -1,0 +1,40 @@
+<app-modal-fotos *ngIf="habilitarModalFoto" [imagemModal]="imagemModal"></app-modal-fotos>
+<app-modal-tracks *ngIf="habilitarModalTracks" [tracks]="tracks"></app-modal-tracks>
+<div class="conteudo">
+  <i class="pi pi-check"></i>
+  <h3 class="font">Busca por Álbum</h3>
+  <div class="mat-elevation-z8 posicionamento">
+    <table mat-table [dataSource]="dataSource">
+      <!-- Imagem Column -->
+      <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef> Imagem </th>
+        <td mat-cell *matCellDef="let album"> 
+          <img style="cursor: pointer;" (click)="habilitarModal(album.images)" alt="Imagem Album" width="50" height="50" src="{{verificarLength(album.images)}}"/> 
+        </td>
+      </ng-container>
+
+      <!-- Nome Álbum Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Nome do Álbum</th>
+        <td mat-cell style="cursor: pointer;" (click)="habilitarModalTrack(album.id)" *matCellDef="let album"> {{album.name}} </td>
+      </ng-container>
+
+      <!-- Artista Column -->
+      <ng-container matColumnDef="artists">
+        <th mat-header-cell *matHeaderCellDef> Artista </th>
+        <td mat-cell *matCellDef="let album"> {{album.artist}} </td>
+      </ng-container>
+
+      <!-- Icone Favorito Column -->
+      <ng-container matColumnDef="icon">
+        <th mat-header-cell *matHeaderCellDef> Favorito </th>
+        <td mat-cell *matCellDef="let album"><fa (click)="favoritar(album.id)" style="cursor: pointer;" [name]="retornarImagem(album.id)" [size]="2"></fa></td>
+      </ng-container>
+
+      
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>
