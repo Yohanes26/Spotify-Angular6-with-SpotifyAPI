@@ -1,0 +1,53 @@
+.background{
+    background-color: rgb(250, 253, 247);
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+.posicao-button{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.mudar-linguagem{
+    margin-top: 30px;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    border-radius: 40px;
+    outline-style: none;
+    border: none;
+    background: #1db954;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.mudar-linguagem:hover{
+    background: #0ffa62;
+}
+
+.font {
+    font-family: monospace;
+}
+
+.portugues{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ingles{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.recuo{
+    text-indent: 4em;
+}
+
+p{
+    font-size: 1.5em;
+}

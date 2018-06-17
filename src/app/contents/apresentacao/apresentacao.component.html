@@ -1,0 +1,96 @@
+<div class="background">
+  <div class="posicao-button">
+    <button class="mudar-linguagem" type="button" (click)="mudarTraducao()">
+      <span *ngIf="!traduzir">Translate for English</span>
+      <span *ngIf="traduzir">Traduzir para Português</span>
+    </button>
+  </div>
+  <div *ngIf="!traduzir" class="portugues font">
+    <h1 style="font-size: 3em">Spotify Busca e Favorito</h1>
+    <br>
+    <p class="recuo">
+      Esse WebSite foi criado com a finalidade de otimizar a 
+      busca de artistas, albuns e músicas, facilitando e 
+      divertindo a busca com estilo e bem intuitivo.
+    </p>
+    
+    <br>
+
+    <h2>
+      Novidades!!!
+    </h2>
+
+    <br>
+
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> Na página de músicas você pode ver a imagem do Álbum ampliada.
+    </p>
+
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> Na página de artistas você pode ver a imagem do Artista ampliada.
+    </p>
+
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> Ainda na página de artistas você pode clicar no nome do artista e verificar os últimos cinco álbuns produzidos.
+    </p>
+
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> Na página de álbuns você pode ver a imagem do álbum ampliada.
+    </p>
+
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> Ainda na página de álbuns você pode clicar no nome do álbum e ter acesso do preview das músicas!!!
+    </p>
+
+    <br>
+
+    <p>
+      Divirtam-se!!!
+    </p>
+  </div>  
+  <div *ngIf="traduzir" class="ingles font">
+    <h1 style="font-size: 3em">Spotify Search and Favorite</h1>
+    <br>
+    <p class="recuo">
+      This WebSite was created with the purpose of optimizing
+      the search of artists, albums and songs, facilitating and 
+      entertaining the search with style and good intuition.
+    </p>
+    
+    <br>
+    
+    <h2>
+      Features!!!
+    </h2>
+    
+    <br>
+    
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa>  On the music page you can see the enlarged album image.
+    </p>
+    
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa>  On the artist page you can see the artist's picture enlarged.
+    </p>
+    
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> Still on the artists page you can click on the artist name and check the last five albums produced
+.
+    </p>
+    
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> On the album page you can see the enlarged album image
+.
+    </p>
+    
+    <p>
+      <fa [name]="'check'" [size]="0.6"></fa> Still on the album page you can click on the album name and have access to the preview of the songs!!!
+    </p>
+    
+    <br>
+    
+    <p>
+      Have fun!!!
+    </p>
+  </div>
+</div>

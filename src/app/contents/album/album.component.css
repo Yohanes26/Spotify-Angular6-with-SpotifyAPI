@@ -1,0 +1,40 @@
+table {
+  width: 100%;
+}
+
+.posicionamento{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.conteudo{
+    background-color: rgb(250, 253, 247);
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+.font{
+    font-size: 30px;
+    font-family: monospace;
+    padding-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+:host /deep/ td.mat-cell:first-child, td.mat-footer-cell:first-child, th.mat-header-cell:first-child{
+    padding-left: 5px;
+}
+
+:host /deep/ td.mat-cell:last-child, td.mat-footer-cell:last-child, th.mat-header-cell:last-child{
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .posicionamento{
+        width: 90%;
+    }
+}
