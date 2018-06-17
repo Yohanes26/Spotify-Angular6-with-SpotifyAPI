@@ -18,7 +18,7 @@ const routes: Routes = [
             { path: 'albums', component: AlbumComponent },
             { path: 'apresentacao', component: ApresentacaoComponent }
         ]
-    },
+    }
 
 ];
 
