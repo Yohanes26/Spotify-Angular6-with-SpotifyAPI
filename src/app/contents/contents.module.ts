@@ -17,6 +17,7 @@ import { ModalArtistaComponent } from './modal/modal-artista/modal-artista.compo
 import { ModalTracksComponent } from './modal/modal-tracks/modal-tracks.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
     HttpClientModule,
     MatPaginatorModule,
     MatIconModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    AppRoutingModule
   ],
   declarations: [
     ArtistComponent,
