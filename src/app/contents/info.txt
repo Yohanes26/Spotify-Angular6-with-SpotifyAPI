@@ -1,7 +1,0 @@
-A user can favorite Artists, Albums and Tracks;
-
-CSS pre-processors or CSS-in-JS;
-Nice to Have:
-State management framework (Redux, Vuex, ngrx);
-Automated tests;
-Host it somewhere as a Live Demo;
