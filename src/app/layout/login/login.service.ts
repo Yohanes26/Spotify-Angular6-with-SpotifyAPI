@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 export class LoginService {
 
   CLIENT_ID = '4203e0e2756a4135b19e28860089dc44';
-  REDIRECT_URI = 'https://desafiospotify.herokuapp.com/home';
+  REDIRECT_URI = 'localhost:4200/home';
 
   constructor(private router: Router) { }
 

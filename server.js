@@ -20,14 +20,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../dist/index.html'));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 // Initialize the app.
-var server = app.listen(process.env.PORT || 8080, function () {
-    var port = server.address().port;
-    console.log("App now running on port", port);
+app.listen(process.env.PORT || 8080, function () {
 });
 
 module.exports = app;
