@@ -1,29 +1,83 @@
 # DesafioSpotify
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 6.0.8.
 
-## Development server
+## Instalando node_modules
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Após fazer o clone do projeto, já na pasta raiz do mesmo aplicar o comando no cmd `npm install`
 
-## Code scaffolding
+## Servindo a aplicação
 
-![Scheme](src/assets/evidencias/responsivoAlbumBackInBlackImagem.PNG)
+Ainda na pasta raiz da aplicação aplicar o comando no cmd `ng serve`. Após subir a aplicação navegar no browser para o caminho `localhost:4200`. A aplicação já iniciara na tela de Login.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+![Scheme](src/assets/evidencias/login.PNG)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Login
 
-## Running unit tests
+Após clicar em login você será direcionado ao site do spotify para login e aceite de termo de acesso ao seu perfil para utilizarmos de alguns dados de seus favoritos.
+Ao fazer Login você será redirecionado para nossa home/apresentação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Scheme](src/assets/evidencias/spotifyHomeApresentacaoPortuges.PNG)
+![Scheme](src/assets/evidencias/spotifyHomeApresentacaoIngles.PNG)
 
-## Running end-to-end tests
+## Busca por Álbum
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Selecione o tipo da pesquisa por Álbum e digite o titulo desejado, após clicar em buscar, será apresentado a lista de Álbuns correspondentes a sua pesquisa!
 
-## Further help
+![Scheme](src/assets/evidencias/spotifyHomeAlbumsBack-in-blackFavorite.PNG)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Ao clicar em alguma imagem de álbum, você conseguirá ver a imagem ampliada!
+
+![Scheme](src/assets/evidencias/spotifyHomeAlbumsBack-in-blackFavoriteImagemAlbum.PNG)
+
+Ao clicar no nome do álbum você terá acesso do preview da música!!!
+
+![Scheme](src/assets/evidencias/spotifyHomeAlbumsBack-in-blackPreview.PNG)
+
+Ao clicar no Jóia, favoritará esse álbum no seu perfil! Caso já seja seu favorito ele terá um símbolo de estrela!
+
+![Scheme](src/assets/evidencias/spotifyHomeAlbumsBack-in-blackFavorite.PNG)
+
+## Busca por Artista
+
+Selecione o tipo da pesquisa por Artistas e digite o nome desejado, após clicar em buscar, será apresentado a lista de Artistas correspondentes a sua pesquisa!
+
+![Scheme](src/assets/evidencias/spotifyHomeArtistsMickael.PNG)
+
+Ao clicar na imagem do Artista você verá a imagem ampliada.
+
+![Scheme](src/assets/evidencias/spotifyHomeArtistsMickaelImagemArtista.PNG)
+
+Quando o Artista não possui imagem cadastrada no sistema do spotify aparecerá uma imagem indisponível.
+
+![Scheme](src/assets/evidencias/spotifyHomeArtistsMickaelImagemIndisponivel.PNG)
+
+Ao clicar no nome do Artista você terá acesso aos cinco últimos álbuns do artista.
+
+![Scheme](src/assets/evidencias/spotifyHomeArtistsMickaelAoClicarNoNome.PNG)
+
+
+## Busca por Música
+
+Selecione o tipo da pesquisa por Músicas e digite o nome desejado, após clicar em buscar, será apresentado a lista de Músicas correspondentes a sua pesquisa!
+
+![Scheme](src/assets/evidencias/spotifyHomeTracksThunder.PNG)
+
+Ao clicar na imagem do álbum da música correspondente você verá a imagem ampliada.
+
+![Scheme](src/assets/evidencias/spotifyHomeTracksThunderImagemAlbum.PNG)
+
+## Design Responsivo
+
+Todas as páginas tem um layout responsivo se ajustando para tamanhos dimensionados pelo usuário ou quando acessado pelo celular.
+
+Abaixo seguem imagens da página de busca de álbuns.
+
+![Scheme](src/assets/evidencias/responsivo-albumBackInBlack.PNG)
+
+
+![Scheme](src/assets/evidencias/responsivo-albumBackInBlackImagem.PNG)
+
+
+![Scheme](src/assets/evidencias/responsivo-albumBackInBlackPreview.PNG)
